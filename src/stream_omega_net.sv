@@ -145,10 +145,13 @@ module stream_omega_net #(
 
     // Selection signal type of an individual router
     localparam int unsigned SelW = unsigned'($clog2(Radix));
+  `ifndef SYNTHESIS
     initial begin : proc_selw
       $display("SelW is:    %0d", SelW);
       $display("SelDstW is: %0d", $bits(sel_dst_t));
     end
+    `endif
+
     typedef logic [SelW-1:0] sel_t;
 
     // Define the payload which should be routed through the network.
@@ -255,6 +258,7 @@ module stream_omega_net #(
       end
     end
 
+  `ifndef SYNTHESIS
     initial begin : proc_debug_print
       $display("NumInp:     %0d", NumInp);
       $display("NumOut:     %0d", NumOut);
@@ -263,6 +267,7 @@ module stream_omega_net #(
       $display("NumLevels:  %0d", NumLevels);
       $display("NumRouters: %0d", NumRouters);
     end
+    `endif
 
     // Assertions
     // Make sure that the handshake and payload is stable
