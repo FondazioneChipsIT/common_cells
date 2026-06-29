@@ -18,7 +18,7 @@ module mem_to_banks #(
   /// Input data width, must be a power of two.
   parameter int unsigned DataWidth = 32'd0,
   /// Atop width.
-  parameter int unsigned AtopWidth = 32'd0,
+  parameter int unsigned AtopWidth = 32'd1,
   /// Number of banks at output, must evenly divide `DataWidth`.
   parameter int unsigned NumBanks  = 32'd1,
   /// Remove transactions that have zero strobe
