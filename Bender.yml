@@ -205,7 +205,10 @@ sources:
       - src/deprecated/edge_propagator_ack.sv
       - src/deprecated/edge_propagator.sv
       - src/deprecated/exp_backoff.sv
+      - src/deprecated/fifo_v1.sv
+      - src/deprecated/fifo_v2.sv
       - src/deprecated/fifo_v3.sv
+      - src/deprecated/generic_fifo.sv
       - src/deprecated/gray_to_binary.sv
       - src/deprecated/heaviside.sv
       - src/deprecated/isochronous_4phase_handshake.sv
@@ -219,6 +222,7 @@ sources:
       - src/deprecated/passthrough_stream_fifo.sv
       - src/deprecated/plru_tree.sv
       - src/deprecated/popcount.sv
+      - src/deprecated/pulp_sync.sv
       - src/deprecated/read.sv
       - src/deprecated/ring_buffer.sv
       - src/deprecated/rr_arb_tree.sv
