@@ -223,6 +223,7 @@ sources:
       - src/deprecated/plru_tree.sv
       - src/deprecated/popcount.sv
       - src/deprecated/pulp_sync.sv
+      - src/deprecated/pulp_sync_wedge.sv
       - src/deprecated/read.sv
       - src/deprecated/ring_buffer.sv
       - src/deprecated/rr_arb_tree.sv
